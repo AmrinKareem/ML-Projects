@@ -1,5 +1,6 @@
 from setuptools import find_packages, setup
 from typing import List
+
 HYPHENE_DOT = "-e ."
 def get_requirements(file_path:str)->List[str]:
     """This function returns a list of requirements"""
