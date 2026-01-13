@@ -13,7 +13,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
-artifacts/
+.artifacts/
 downloads/
 eggs/
 .eggs/

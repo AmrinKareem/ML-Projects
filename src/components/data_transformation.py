@@ -30,8 +30,8 @@ class DataTransformation:
         """
         
         try:
-            numeric_features = ['writing score', 'reading score']
-            categorical_features = ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']
+            numeric_features = ['writing_score', 'reading_score']
+            categorical_features = ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
             num_pipeline = Pipeline(
                 steps=[
                     ("imputer", SimpleImputer(strategy='median')),
@@ -66,7 +66,7 @@ class DataTransformation:
             logging.info("Read train and test data")
             logging.info("Obtaining preprocessing object")
             preprocessing_obj = self.get_transformer_object()
-            target_column_name = "math score"
+            target_column_name = "math_score"
 
             input_feature_train_df = train_df.drop(columns=[target_column_name], axis=1)
             target_feature_train_df = train_df[target_column_name]
